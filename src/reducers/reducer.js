@@ -5,5 +5,12 @@ const initialState = {
 }
 
 export const reducer = (state = initialState, action) => {
+
+    if (action.type === actions.START_QUIZ) {
+        return Object.assign({}, state, {
+            view: "question1"
+        })
+    }
+
     return state
 }

@@ -1,0 +1,10 @@
+export const START_QUIZ = 'START_QUIZ';
+export const startQuiz = () => ({
+    type: START_QUIZ,
+})
+
+export const CHANGE_VIEW = 'CHANGE_VIEW';
+export const changeView = (view) => ({
+    type: CHANGE_VIEW,
+    view
+})
