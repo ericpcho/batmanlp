@@ -90,6 +90,7 @@ export class Home extends React.Component {
                     <h1>Access Granted! You've gained access to some of your top-secret documents. Enter your e-mail to receive all Batman communications:</h1>
                     <form action="https://submit-form.com/644aded2-3c69-42f9-b5e0-e17504165f9e" method="POST"> 
                     <input type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
+                    <input type="hidden" name="_redirect" value="https://localhost:3000/thanks"/>
                     <button type="submit">Submit</button>
                     </form>
             </div>
