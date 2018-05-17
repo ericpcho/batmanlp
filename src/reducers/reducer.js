@@ -12,5 +12,11 @@ export const reducer = (state = initialState, action) => {
         })
     }
 
+    if (action.type === actions.ANSWER_QUESTION) {
+        return Object.assign({}, state, {
+            view: action.answer
+        })
+    }
+
     return state
 }
