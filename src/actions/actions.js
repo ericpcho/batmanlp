@@ -9,6 +9,12 @@ export const answerQuestion = (answer) => ({
     answer
 })
 
+export const ANSWER_WRONG = 'ANSWER_WRONG';
+export const answerWrong = (answer) => ({
+    type: ANSWER_WRONG,
+    answer
+})
+
 // export const CHANGE_VIEW = 'CHANGE_VIEW';
 // export const changeView = (view) => ({
 //     type: CHANGE_VIEW,

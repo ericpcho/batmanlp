@@ -1,7 +1,7 @@
 import * as actions from '../actions/actions.js'
 
 const initialState = {
-    view: 'home'
+    view: 'question1'
 }
 
 export const reducer = (state = initialState, action) => {
@@ -13,6 +13,12 @@ export const reducer = (state = initialState, action) => {
     }
 
     if (action.type === actions.ANSWER_QUESTION) {
+        return Object.assign({}, state, {
+            view: action.answer
+        })
+    }
+
+    if (action.type === actions.ANSWER_WRONG) {
         return Object.assign({}, state, {
             view: action.answer
         })
