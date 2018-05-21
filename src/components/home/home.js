@@ -5,6 +5,10 @@ import './home.css'
 
 export class Home extends React.Component {
 
+    startQuiz(){
+        this.props.dispatch(actions.answerQuestion('question1'))
+    }
+
     question2() {
         this.props.dispatch(actions.answerQuestion("question2"))
     }
@@ -24,13 +28,20 @@ export class Home extends React.Component {
         this.props.dispatch(actions.answerQuestion('question1'))
     }
 
+    answerQuestionSample(event){
+        event.preventDefault()
+        const value = event.target.choice.value
+        console.log(value)
+        this.props.dispatch(actions.answerQuestion(value))
+    }
+
 
     render() {
 
         let pageView;
 
         if (this.props.view === 'question1') {
-            pageView = <div className="terminal1-container">
+            pageView = <section className="container"> <div className="terminal1-container">
             <div className = "terminal1">
             </div>
                     <input onClick={event => this.answerWrong(event)} className= "button-choice" type="button" name="choice" value="A" />
@@ -38,60 +49,67 @@ export class Home extends React.Component {
                     <input onClick={event => this.answerWrong(event)} className= "button-choice" type="button" name="choice" value="C" />
                     <input onClick={event => this.answerWrong(event)} className= "button-choice" type="button" name="choice" value="D" />
             </div>
+            </section>
         }
 
         if (this.props.view === 'correct1') {
-            pageView = <div className="terminal1-container">
+            
+            pageView = <section className="container"> <div className="terminal1-container">
             <div className = "correct1">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
                     <input onClick={event => this.question2(event)} className= "button-next" type="button" name="choice" value="Next" />
                     </form>
             </div>
+            </section>
         }
 
         if (this.props.view === 'A') {
-            pageView = <div className="terminal1-container">
+            pageView = <section className="container"> <div className="terminal1-container">
             <div className = "wrongA">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
                     <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
+            </section>
         }
         if (this.props.view === 'B') {
-            pageView = <div className="terminal1-container">
+            pageView = <section className="container"> <div className="terminal1-container">
             <div className = "wrongB">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
                     <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
+            </section>
         }
         if (this.props.view === 'C') {
-            pageView = <div className="terminal1-container">
+            pageView = <section className="container"> <div className="terminal1-container">
             <div className = "wrongC">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
                     <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
+            </section>
         }
 
         if (this.props.view === 'D') {
-            pageView = <div className="terminal1-container">
+            pageView = <section className="container"> <div className="terminal1-container">
             <div className = "wrongD">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
                     <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
+            </section>
         }
 
         if (this.props.view === 'question2') {
             pageView = <div>
                     <h1>What is Man-Bat's real name?</h1>
-                    <form onSubmit={event => this.answerQuestion(event)}> 
+                    <form onSubmit={event => this.answerQuestionSample(event)}> 
                     <input type="radio" name="choice" value="incorrect" defaultChecked/> Dr. Robert Fausto Ramos
                     <input type="radio" name="choice" value="question3" /> Dr. Robert Kirkland Langstrom 
                     <input type="radio" name="choice" value="incorrect" /> Dr. Robert Bartholomew
@@ -104,7 +122,7 @@ export class Home extends React.Component {
         if (this.props.view === 'question3') {
             pageView = <div>
                     <h1>Who is the first criminal that you arrested?</h1>
-                    <form onSubmit={event => this.answerQuestion(event)}> 
+                    <form onSubmit={event => this.answerQuestionSample(event)}> 
                     <input type="radio" name="choice" value="question4" defaultChecked/> Slugsy Kyle
                     <input type="radio" name="choice" value="incorrect"/> The Red Hood
                     <input type="radio" name="choice" value="incorrect"/> Penguin
@@ -117,7 +135,7 @@ export class Home extends React.Component {
         if (this.props.view === 'question4') {
             pageView = <div>
                     <h1>Who created Doctor Double-X?</h1>
-                    <form onSubmit={event => this.answerQuestion(event)}> 
+                    <form onSubmit={event => this.answerQuestionSample(event)}> 
                     <input type="radio" name="choice" value="incorrect" defaultChecked/> Hugo Strange
                     <input type="radio" name="choice" value="question5"/> Simon Ecks
                     <input type="radio" name="choice" value="incorrect"/> Victor Zsasz
@@ -130,7 +148,7 @@ export class Home extends React.Component {
         if (this.props.view === 'question5') {
             pageView = <div>
                     <h1>The Cluemaster had one child, what is their name?</h1>
-                    <form onSubmit={event => this.answerQuestion(event)}> 
+                    <form onSubmit={event => this.answerQuestionSample(event)}> 
                     <input type="radio" name="choice" value="incorrect" defaultChecked/> Alpha
                     <input type="radio" name="choice" value="incorrect"/> Dr. Moon 
                     <input type="radio" name="choice" value="incorrect"/> Silken Spider
@@ -157,8 +175,15 @@ export class Home extends React.Component {
                 <button className="start-quiz" onClick={event => this.startQuiz(event)}>Begin</button>
             </div>
         }
+        
+        if (this.props.view === 'incorrect') {
+            pageView = <div>
+                    <h1>Access Denied! Only answering every question correctly will gain you access to the top-secret documents.</h1>
+                    <button className="start-quiz" onClick={event => this.startQuiz(event)}>Start Again</button>
+            </div>
+        }
 
-        return (<section className="container">
+        return (<section>
             {pageView}
         </section>
         )
