@@ -55,7 +55,7 @@ export class Home extends React.Component {
             <div className = "wrongA">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
-                    <input onClick={event => this.answerQuestion(event)} className= "button-next" type="button" name="choice" value="Start Over" />
+                    <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
         }
@@ -64,7 +64,7 @@ export class Home extends React.Component {
             <div className = "wrongB">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
-                    <input onClick={event => this.answerQuestion(event)} className= "button-next" type="button" name="choice" value="Start Over" />
+                    <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
         }
@@ -73,7 +73,7 @@ export class Home extends React.Component {
             <div className = "wrongC">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
-                    <input onClick={event => this.answerQuestion(event)} className= "button-next" type="button" name="choice" value="Start Over" />
+                    <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
         }
@@ -83,7 +83,7 @@ export class Home extends React.Component {
             <div className = "wrongD">
             </div>
             <form onSubmit={event => this.answerQuestion(event)}>
-                    <input onClick={event => this.answerQuestion(event)} className= "button-next" type="button" name="choice" value="Start Over" />
+                    <input onClick={event => this.answerQuestion(event)} className= "button-startover" type="button" name="choice" value="Start Over" />
                     </form>
             </div>
         }
