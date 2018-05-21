@@ -1,5 +1,5 @@
 .terminal1 {
-    background: url(StartUp.gif);
+    background: url(StartUp.gif), url(CB-Correct.gif), url(CA-Wrong.gif), url(CC-Wrong.gif), url(CD-Wrong.gif);
     background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
