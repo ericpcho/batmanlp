@@ -5,7 +5,6 @@ import './home.css'
 
 export class Home extends React.Component {
 
-
     question2() {
         this.props.dispatch(actions.answerQuestion("question2"))
     }
@@ -15,7 +14,6 @@ export class Home extends React.Component {
     }
 
     answerWrong(event){
-        event.preventDefault()
         const value = event.target.value
         console.log(value)
         this.props.dispatch(actions.answerQuestion(value))
@@ -25,6 +23,7 @@ export class Home extends React.Component {
         event.preventDefault()
         this.props.dispatch(actions.answerQuestion('question1'))
     }
+
 
     render() {
 

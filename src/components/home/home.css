@@ -1,15 +1,26 @@
 .terminal1 {
     background: url(StartUp.gif);
+    background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 750px;
+    height: 425px;
+    width: 725px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -20px;
 }
 
 .terminal1-container {
+    border: 4px solid black;
 width: 100%;
 text-align: center;
+background-image: url(HTBC-Gif-1.gif);
+background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+height: 900px;
 }
 
 .container {
@@ -36,16 +47,40 @@ background-position: center;
 
 .correct1 {
     background: url(CB-Correct.gif);
+    background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 750px;
+    height: 425px;
+    width: 725px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -20px;
+}
+
+.button-choice {
+    position: relative;
+    top: 25px;
+}
+
+.button-next {
+    position: relative;
+    top: 25px;
 }
 
 .wrongA {
     background: url(CA-Wrong.gif);
+    background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 750px;
+    height: 425px;
+    width: 725px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -20px;
 }
 
 /* .wrongB {
@@ -57,13 +92,31 @@ background-position: center;
 
 .wrongC {
     background: url(CC-Wrong.gif);
+    background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 750px;
+    height: 425px;
+    width: 725px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -20px;
 }
 .wrongD {
     background: url(CD-Wrong.gif);
+    background-size: 97%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 750px;
+    height: 425px;
+    width: 725px;
+    margin-top: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: -20px;
+}
+
+.hidden {
+    visibility: hidden;
 }
