@@ -10,10 +10,28 @@ export class Home extends React.Component {
         this.props.dispatch(actions.changeView(view))
     }
 
-    toggleAnswer(event){
+    toggleAnswerA(event){
         const value = event.currentTarget.value
         console.log(value)
-        this.props.dispatch(actions.toggleAnswer(value))
+        this.props.dispatch(actions.toggleAnswerA(value))
+    }
+
+    toggleAnswerB(event){
+        const value = event.currentTarget.value
+        console.log(value)
+        this.props.dispatch(actions.toggleAnswerB(value))
+    }
+
+    toggleAnswerC(event){
+        const value = event.currentTarget.value
+        console.log(value)
+        this.props.dispatch(actions.toggleAnswerC(value))
+    }
+
+    toggleAnswerD(event){
+        const value = event.currentTarget.value
+        console.log(value)
+        this.props.dispatch(actions.toggleAnswerD(value))
     }
     
     submitAnswer(event){
@@ -51,10 +69,10 @@ export class Home extends React.Component {
             <div className = "terminal1">
             </div>
                     <h1>Question1: Which of the following is a source of Superman's power?</h1>
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="a) Kryptonite"/>
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="b) Water" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="c) The Sun" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="d) Apples" />
+                    <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Kryptonite"/>
+                    <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Water" />
+                    <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) The Sun" />
+                    <input onClick={event => this.toggleAnswerD(event)} className= {`button-choice ${this.props.selectedd}`} type="button" name="choice" value="d) Apples" />
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
@@ -67,10 +85,10 @@ export class Home extends React.Component {
             <div className = "terminal1">
             </div>
             <h1>Question2: What is Man-Bat's real name?</h1> 
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="a) Dr. Robert Fausto Ramos"/>
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="b) Dr. Robert Kirkland Langstrom" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="c) Dr. Robert Bartholomew" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="d) Dr. Robert Jeffress" />
+                    <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Dr. Robert Fausto Ramos"/>
+                    <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Dr. Robert Kirkland Langstrom" />
+                    <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Dr. Robert Bartholomew" />
+                    <input onClick={event => this.toggleAnswerD(event)} className= {`button-choice ${this.props.selectedd}`} type="button" name="choice" value="d) Dr. Robert Jeffress" />
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
@@ -83,10 +101,10 @@ export class Home extends React.Component {
             <div className = "terminal1">
             </div>
             <h1>Question3: Who is the first criminal that you arrested??</h1> 
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="a) Slugsy Kyle"/>
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="b) The Red Hood" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="c) Penguin" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="d) Hugo Strange" />
+                    <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Slugsy Kyle"/>
+                    <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) The Red Hood" />
+                    <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Penguin" />
+                    <input onClick={event => this.toggleAnswerD(event)} className= {`button-choice ${this.props.selectedd}`} type="button" name="choice" value="d) Hugo Strange" />
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
@@ -99,10 +117,10 @@ export class Home extends React.Component {
             <div className = "terminal1">
             </div>
             <h1>Question4: Who created Doctor Double-X?</h1> 
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="a) Hugo Strange"/>
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="b) Simon Ecks" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="c) Victor Zsasz" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="d) Count Vergo" />
+                    <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Hugo Strange"/>
+                    <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Simon Ecks" />
+                    <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Victor Zsasz" />
+                    <input onClick={event => this.toggleAnswerD(event)} className= {`button-choice ${this.props.selectedd}`} type="button" name="choice" value="d) Count Vergo" />
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
@@ -115,10 +133,10 @@ export class Home extends React.Component {
             <div className = "terminal1">
             </div>
             <h1>Question5: The Cluemaster had one child, what is their name?</h1> 
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="a) Alpha"/>
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="b) Dr. Moon" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="c) Silken Spider" />
-                    <input onClick={event => this.toggleAnswer(event)} className= "button-choice" type="button" name="choice" value="d) The Spoiler" />
+                    <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Alpha"/>
+                    <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Dr. Moon" />
+                    <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Silken Spider" />
+                    <input onClick={event => this.toggleAnswerD(event)} className= {`button-choice ${this.props.selectedd}`} type="button" name="choice" value="d) The Spoiler" />
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
@@ -178,7 +196,11 @@ const mapStateToProps = state => ({
     view: state.view,
     selectedAnswer: state.selectedAnswer,
     page: state.page,
-    error: state.error
+    error: state.error,
+    selecteda: state.selecteda,
+    selectedb: state.selectedb,
+    selectedc: state.selectedc,
+    selectedd: state.selectedd
 })
 
 export default connect(mapStateToProps)(Home);

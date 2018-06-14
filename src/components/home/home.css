@@ -44,7 +44,27 @@
     display: block;
     margin: auto;
     font-size: 30px;
+    outline: none;
 }
+
+
+.button-choice:hover { 
+    cursor: pointer;
+ }
+
+ .a, .b, .c, .d{
+    color: blue;
+    background:none!important;
+    border:none; 
+    padding:0!important;
+    font-family: "Daniel";
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    outline: none;
+ }
+
+ 
 
 h1 {
     font-family: "Daniel";
