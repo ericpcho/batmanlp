@@ -1,137 +1,99 @@
-.terminal1 {
-    background: url(StartUp.gif), url(CB-Correct.gif), url(CA-Wrong.gif), url(CC-Wrong.gif), url(CD-Wrong.gif);
-    background-size: 97%;
+body {
+    background: url("background.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    height: 425px;
-    width: 725px;
-    margin-top: 155px;
+    background-size: cover;
+}
+
+.title-logo{
+    background: url("anatomy-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 490px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    left: -20px;
 }
 
-.terminal1-container {
-    border: 4px solid black;
-width: 100%;
-max-width: 1415px;
-text-align: center;
-background-image: url(HTBC-Gif-1.gif);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-height: 900px;
+.home-text {
+    font-family: "DanielBold";
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    padding-top: 150px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
+.start-now {
+    background: url("button.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: "DanielBold";
+    height: 150px;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 25px;
 }
 
 .button-choice {
-    font-size: 50px;
-    width: 80px;
-    border-radius: 50%;
-    margin: 10px 10px;
-    background-color: grey;
+    background:none!important;
+    border:none; 
+    padding:0!important;
+    font-family: "Daniel";
+    display: block;
+    margin: auto;
+    font-size: 30px;
 }
 
-.button-choice:focus {
-    background-color: yellow;
-    outline: none;
+h1 {
+    font-family: "Daniel";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.choice {
-    size: 50px;
-}
-
-.correct1 {
-    background: url(CB-Correct.gif);
-    background-size: 97%;
+.submit {
+    background: url("button.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    height: 425px;
-    width: 725px;
-    margin-top: 155px;
+    background-size: cover;
+    color:white;
+    font-family: "DanielBold";
+    height: 75px;
+    width: 125px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    left: -20px;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    padding-top: 7px;
 }
 
-.button-choice {
-    position: relative;
-    top: 25px;
+.error {
+    font-family: "DanielBold";
+    display: block;
+    margin: auto;
+    padding-top: 15px;
+    width: 300px;
 }
 
-.button-next {
-    position: relative;
-    top: 25px;
-}
-
-.wrongA {
-    background: url(CA-Wrong.gif);
-    background-size: 97%;
+.correct, .incorrect {
+    background: url("button.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    height: 425px;
-    width: 725px;
-    margin-top: 155px;
+    background-size: cover;
+    color:white;
+    font-family: "DanielBold";
+    height: 50px;
+    width: 275px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    left: -20px;
-}
-
-/* .wrongB {
-    background: url(CB-Wrong.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 750px;
-} */
-
-.wrongC {
-    background: url(CC-Wrong.gif);
-    background-size: 97%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 425px;
-    width: 725px;
-    margin-top: 155px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    left: -20px;
-}
-.wrongD {
-    background: url(CD-Wrong.gif);
-    background-size: 97%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 425px;
-    width: 725px;
-    margin-top: 155px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    left: -20px;
-}
-
-.container {
-    background: black;
-}
-
-.button-next { 
-    font-size: 50px;
-    width: 150px;
-    margin: 10px 10px;
-    background-color: grey;
-}
-
-.button-startover { 
-    font-size: 50px;
-    width: 250px;
-    margin: 35px 10px;
-    background-color: grey;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-top: 50px;
 }

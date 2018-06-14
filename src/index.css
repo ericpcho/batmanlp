@@ -1,5 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
+
+@font-face {
+  font-family: 'Daniel';
+  src: local('Daniel'), url(./fonts/daniel.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'DanielBold';
+  src: local('DanielBold'), url(./fonts/danielbd.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'DanielBlack';
+  src: local('DanielBlack'), url(./fonts/danielbk.ttf) format('truetype');
+}
+
