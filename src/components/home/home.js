@@ -158,7 +158,7 @@ export class Home extends React.Component {
                     <label className="email-text">Email Address:</label>
                     <input className="email" type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
                     </div>
-                    <input type="hidden" name="_redirect" value="https://localhost:3000/thanks"/>
+                    <input type="hidden" name="_redirect" value="https://batman.netlify.com/thanks"/>
                     <button className="form-submit" type="submit">Submit</button>
                     </form>
             </section>
