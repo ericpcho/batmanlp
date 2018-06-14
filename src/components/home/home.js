@@ -47,7 +47,7 @@ export class Home extends React.Component {
 
         if (this.props.view === 'question1') {
             pageView = <section className="container"> <div className="terminal1-container">
-             <div className="title-logo"> </div>
+             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
                     <h1>Question1: Which of the following is a source of Superman's power?</h1>
@@ -63,7 +63,7 @@ export class Home extends React.Component {
 
         if (this.props.view === 'question2') {
             pageView = <section className="container"> <div className="terminal1-container">
-            <div className="title-logo"> </div>
+            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
             <h1>Question2: What is Man-Bat's real name?</h1> 
@@ -79,7 +79,7 @@ export class Home extends React.Component {
 
         if (this.props.view === 'question3') {
             pageView = <section className="container"> <div className="terminal1-container">
-            <div className="title-logo"> </div>
+           <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
             <h1>Question3: Who is the first criminal that you arrested??</h1> 
@@ -95,7 +95,7 @@ export class Home extends React.Component {
 
         if (this.props.view === 'question4') {
             pageView = <section className="container"> <div className="terminal1-container">
-            <div className="title-logo"> </div>
+            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
             <h1>Question4: Who created Doctor Double-X?</h1> 
@@ -111,7 +111,7 @@ export class Home extends React.Component {
 
         if (this.props.view === 'question5') {
             pageView = <section className="container"> <div className="terminal1-container">
-            <div className="title-logo"> </div>
+           <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
             <h1>Question5: The Cluemaster had one child, what is their name?</h1> 
@@ -124,27 +124,10 @@ export class Home extends React.Component {
             </div>
             </section>
         }
-        
-
-        if (this.props.view === "incorrect"){
-            pageView = <section className="container">
-            <div className="title-logo"> </div>
-            <span className="home-text">Incorrect!</span>
-            <button onClick={() => this.changeView(`question${this.props.page}`)} className="incorrect" >Go Back</button>
-            </section>
-        }
-
-        if (this.props.view === "correct"){
-            pageView = <section className="container">
-            <div className="title-logo"> </div>
-            <span className="home-text">Correct!</span>
-            <button onClick={() => this.changeView(`question${this.props.page}`)} className="correct" >Next Question</button>
-            </section>
-        }
 
         if (this.props.view === 'question6') {
             pageView = <section className="container">
-                    <div className="title-logo"> </div>
+                    <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
                     <h2>Congratulations! You are one of the very few to access this page.</h2>
                     <h2>As a reward, here are exclusive srpeads from DC Comics: Anatomy of a Metahuman</h2>
                     <h2>Available September 2018</h2>
@@ -164,7 +147,26 @@ export class Home extends React.Component {
         }
         
 
-        return (<section>
+        if (this.props.view === "incorrect"){
+            pageView = <section className="container">
+            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
+            <span className="home-text">Incorrect!</span>
+            <button onClick={() => this.changeView(`question${this.props.page}`)} className="incorrect" >Go Back</button>
+            </section>
+        }
+
+        if (this.props.view === "correct"){
+            pageView = <section className="container">
+            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
+            <span className="home-text">Correct!</span>
+            <button onClick={() => this.changeView(`question${this.props.page}`)} className="correct" >Next Question</button>
+            </section>
+        }
+
+
+        
+
+        return (<section className="background">
             {pageView}
         </section>
         )
