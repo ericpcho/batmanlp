@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions/actions.js';
-import './home.css'
+import './home.css';
+import anatomy from './anatomy-logo.jpg';
 
 export class Home extends React.Component {
 
@@ -36,7 +37,7 @@ export class Home extends React.Component {
 
         if (this.props.view === "home"){
             pageView = <section className="container">
-            <div className="title-logo"> </div>
+            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <span className="home-text"> Test Your Knowledge </span>
             <button onClick={() => this.changeView("question1")} className="start-now" >Start Now?</button>
             <div className="ie-logo"> </div>
