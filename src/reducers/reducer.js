@@ -67,7 +67,7 @@ export const reducer = (state = initialState, action) => {
             selectedb: "",
             selectedc: "",
             selectedd: "",
-            
+            error: ""
         })
     }
     
@@ -80,6 +80,7 @@ export const reducer = (state = initialState, action) => {
             selectedb: "",
             selectedc: "",
             selectedd: "",
+            error: ""
         })
     }
 
