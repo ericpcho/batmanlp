@@ -56,6 +56,27 @@ h1 {
     padding-top: 10px;
 }
 
+h2 {
+    font-family: "Daniel";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+h3 {
+    font-family: "DanielBold";
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+h4 {
+    font-family: "DanielBold";
+    font-size: 40px;
+    text-align: center;
+    margin: 0px;
+}
+
 .submit {
     background: url("button.jpg");
     background-repeat: no-repeat;
@@ -70,6 +91,24 @@ h1 {
     text-align: center;
     margin-top: 50px;
     font-size: 25px;
+    padding-top: 7px;
+}
+
+.form-submit {
+    background: url("button.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: "DanielBold";
+    height: 55px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 45px;
+    margin-top: 7px;
     padding-top: 7px;
 }
 
@@ -96,4 +135,60 @@ h1 {
     font-size: 30px;
     padding-top: 10px;
     margin-top: 50px;
+}
+
+.spread1{
+    background: url("spread2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spread2{
+    background: url("spread1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-form {
+    font-family: "Daniel";
+    padding-right: 10px;
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+}
+
+.email-text {
+    width: 335px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+
+.email {
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    border: none;
+    display: inline;
+    font-family: "Danielbold";
+    font-size: inherit;
+    padding-left: 15px;;
+    background: inherit;
+    border-bottom: 2px dashed black;
+    padding-bottom: 5px;
+}
+
+.email-div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 450px;
 }

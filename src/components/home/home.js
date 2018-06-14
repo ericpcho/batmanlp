@@ -38,7 +38,7 @@ export class Home extends React.Component {
             pageView = <section className="container">
             <div className="title-logo"> </div>
             <span className="home-text"> Test Your Knowledge </span>
-            <button onClick={() => this.changeView("question1")} className="start-now" >Start Now</button>
+            <button onClick={() => this.changeView("question1")} className="start-now" >Start Now?</button>
             <div className="ie-logo"> </div>
             <div className="wb-logo"> </div>
             </section>
@@ -142,14 +142,24 @@ export class Home extends React.Component {
         }
 
         if (this.props.view === 'question6') {
-            pageView = <div>
-                    <h1>Access Granted! You've gained access to some of your top-secret documents. Enter your e-mail to receive all Batman communications:</h1>
-                    <form action="https://submit-form.com/644aded2-3c69-42f9-b5e0-e17504165f9e" method="POST"> 
-                    <input type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
+            pageView = <section className="container">
+                    <div className="title-logo"> </div>
+                    <h2>Congratulations! You are one of the very few to access this page.</h2>
+                    <h2>As a reward, here are exclusive srpeads from DC Comics: Anatomy of a Metahuman</h2>
+                    <h2>Available September 2018</h2>
+                    <div className="spread1"> </div>
+                    <div className="spread2"> </div>
+                    <h3>Want to learn more?</h3>
+                    <h4>Sign up now to get the latest news</h4>
+                    <form className="email-form" action="https://submit-form.com/644aded2-3c69-42f9-b5e0-e17504165f9e" method="POST">
+                    <div className="email-div"> 
+                    <label className="email-text">Email Address:</label>
+                    <input className="email" type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
+                    </div>
                     <input type="hidden" name="_redirect" value="https://localhost:3000/thanks"/>
-                    <button type="submit">Submit</button>
+                    <button className="form-submit" type="submit">Submit</button>
                     </form>
-            </div>
+            </section>
         }
         
 
