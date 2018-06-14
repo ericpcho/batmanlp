@@ -164,7 +164,6 @@ export class Home extends React.Component {
             </section>
         }
         
-
         if (this.props.view === "incorrect"){
             pageView = <section className="container">
             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
