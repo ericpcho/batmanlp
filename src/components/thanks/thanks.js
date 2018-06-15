@@ -10,8 +10,8 @@ export class Thanks extends React.Component {
             <div className="thanks">
                 Thank You!
             </div>
-            <div className="ie-logo"> </div>
-            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
+            <a href="http://insighteditions.com" className="ie-logo"> </a>
+            <a href="https://www.dccomics.com" className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></a>
             </section>
         )
     }
