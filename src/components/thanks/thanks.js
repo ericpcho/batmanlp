@@ -8,7 +8,10 @@ export class Thanks extends React.Component {
         return(
             <div className="thanks">
                 Thank You!
+                <div className="ie-logo"> </div>
+                        <div className="wb-logo"> </div>
             </div>
+
         )
     }
 }

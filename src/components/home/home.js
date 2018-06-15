@@ -76,6 +76,8 @@ export class Home extends React.Component {
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 
@@ -92,6 +94,8 @@ export class Home extends React.Component {
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 
@@ -108,6 +112,8 @@ export class Home extends React.Component {
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 
@@ -124,6 +130,8 @@ export class Home extends React.Component {
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 
@@ -140,6 +148,8 @@ export class Home extends React.Component {
                     <input type="submit" className="submit" onClick={event => this.submitAnswer(event)}/>
                     <span className="error">{this.props.error}</span>
             </div>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 
@@ -161,6 +171,8 @@ export class Home extends React.Component {
                     <input type="hidden" name="_redirect" value="https://batmanlp.netlify.com/thanks"/>
                     <button className="form-submit" type="submit">Submit</button>
                     </form>
+                    <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
         
@@ -169,6 +181,8 @@ export class Home extends React.Component {
             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <span className="home-text">Incorrect!</span>
             <button onClick={() => this.changeView(`question${this.props.page}`)} className="incorrect" >Go Back</button>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 
@@ -177,6 +191,8 @@ export class Home extends React.Component {
             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <span className="home-text">Correct!</span>
             <button onClick={() => this.changeView(`question${this.props.page}`)} className="correct" >Next Question</button>
+            <div className="ie-logo"> </div>
+            <div className="wb-logo"> </div>
             </section>
         }
 

@@ -209,3 +209,28 @@ h4 {
     margin: auto;
     width: 450px;
 }
+
+.ie-logo {
+    background: url("ie-logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 180px;
+    margin-top: 45px;
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+}
+
+.wb-logo{
+    background: url("wb-logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    width: 170px;
+    display: inline-block;
+    margin-right: 10px;
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+}
