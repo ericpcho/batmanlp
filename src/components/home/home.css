@@ -254,23 +254,23 @@ h4 {
     }
 
     .home-text{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 15px;
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 25px;
     }
     
     h4 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .button-choice {
@@ -280,7 +280,7 @@ h4 {
         font-family: "Daniel";
         display: block;
         margin: auto;
-        font-size: 20px;
+        font-size: 15px;
         outline: none;
     }
 
@@ -294,8 +294,8 @@ h4 {
         background: url("spread2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
-        width: 370px;
+        height: 350px;
+        width: 259px;
         margin-left: auto;
         margin-right: auto;
     }
