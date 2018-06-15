@@ -1,6 +1,7 @@
 body {
   background: url("background.jpg");
   background-size: cover;
+  height: 1200px;
 }
 
 @font-face {
@@ -49,4 +50,22 @@ body {
   font-size: 6px;
   font-weight: bold;
   color: black;
+}
+
+@media only screen and (max-width: 700px) {
+
+.wb-logo {
+  height: 65px;
+  width: 61px;
+}
+
+.legal {
+  font-size: 5px;
+}
+
+.ie-logo {
+  height: 65px;
+  width: 90px;
+}
+
 }
