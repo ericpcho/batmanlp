@@ -68,4 +68,11 @@ body {
   width: 90px;
 }
 
+body {
+  background: url("background.jpg");
+  background-size: cover;
+  height: 700px;
+}
+
+
 }
