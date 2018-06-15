@@ -18,3 +18,35 @@ body {
   src: local('DanielBlack'), url(./fonts/danielbk.ttf) format('truetype');
 }
 
+.ie-logo {
+  background: url("ie-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130px;
+  width: 180px;
+  margin-top: 45px;
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+}
+
+.wb-logo{
+  background: url("wb-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+  width: 150px;
+  display: inline-block;
+  margin-right: 10px;
+  position: fixed;
+  right: 0px;
+  bottom: 20px;
+}
+
+.legal {
+  position: fixed;
+  bottom: 5px;
+  font-size: 6px;
+  font-weight: bold;
+  border: 1px solid white;
+}

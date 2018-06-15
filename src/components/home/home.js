@@ -59,7 +59,7 @@ export class Home extends React.Component {
             <span className="home-text"> Test Your Knowledge </span>
             <button onClick={() => this.changeView("question1")} className="start-now" >Start Now?</button>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -77,7 +77,7 @@ export class Home extends React.Component {
                     <span className="error">{this.props.error}</span>
             </div>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -95,7 +95,7 @@ export class Home extends React.Component {
                     <span className="error">{this.props.error}</span>
             </div>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -113,7 +113,7 @@ export class Home extends React.Component {
                     <span className="error">{this.props.error}</span>
             </div>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -131,7 +131,7 @@ export class Home extends React.Component {
                     <span className="error">{this.props.error}</span>
             </div>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -149,7 +149,7 @@ export class Home extends React.Component {
                     <span className="error">{this.props.error}</span>
             </div>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -172,7 +172,7 @@ export class Home extends React.Component {
                     <button className="form-submit" type="submit">Submit</button>
                     </form>
                     <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+                    <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
         
@@ -182,7 +182,7 @@ export class Home extends React.Component {
             <span className="home-text">Incorrect!</span>
             <button onClick={() => this.changeView(`question${this.props.page}`)} className="incorrect" >Go Back</button>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 
@@ -192,7 +192,7 @@ export class Home extends React.Component {
             <span className="home-text">Correct!</span>
             <button onClick={() => this.changeView(`question${this.props.page}`)} className="correct" >Next Question</button>
             <div className="ie-logo"> </div>
-            <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         }
 

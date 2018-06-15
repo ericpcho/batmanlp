@@ -11,7 +11,7 @@ export class Thanks extends React.Component {
                 Thank You!
             </div>
             <div className="ie-logo"> </div>
-                <div className="wb-logo"> </div>
+            <div className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></div>
             </section>
         )
     }
