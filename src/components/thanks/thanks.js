@@ -6,12 +6,13 @@ import './thanks.css'
 export class Thanks extends React.Component {
     render(){
         return(
+            <section>
             <div className="thanks">
                 Thank You!
-                <div className="ie-logo"> </div>
-                        <div className="wb-logo"> </div>
             </div>
-
+            <div className="ie-logo"> </div>
+                <div className="wb-logo"> </div>
+            </section>
         )
     }
 }
