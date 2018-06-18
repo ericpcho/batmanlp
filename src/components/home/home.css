@@ -1,6 +1,6 @@
 
 .title-logo{
-    height: 250px;
+    height: 100%;
     width: 490px;
     margin-top: 50px;
     margin-left: auto;
@@ -57,7 +57,7 @@
  }
 
  .a, .b, .c, .d{
-    color: blue;
+    color: crimson;
     background:none!important;
     border:none; 
     padding:0!important;
