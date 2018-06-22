@@ -64,7 +64,7 @@ export class Home extends React.Component {
              <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
-                    <h1>Question1: Which of the following is a source of Superman's power?</h1>
+                    <h1>Question 1: Which of the following is a source of Superman's power?</h1>
                     <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Kryptonite"/>
                     <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Water" />
                     <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) The Sun" />
@@ -82,7 +82,7 @@ export class Home extends React.Component {
             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
-            <h1>Question2: What is Man-Bat's real name?</h1> 
+            <h1>Question 2: What is Man-Bat's real name?</h1> 
                     <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Dr. Robert Fausto Ramos"/>
                     <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Dr. Robert Kirkland Langstrom" />
                     <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Dr. Robert Bartholomew" />
@@ -100,7 +100,7 @@ export class Home extends React.Component {
            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
-            <h1>Question3: Who is the first criminal that Batman arrested?</h1> 
+            <h1>Question 3: Who is the first criminal that Batman arrested?</h1> 
                     <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Slugsy Kyle"/>
                     <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) The Red Hood" />
                     <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Penguin" />
@@ -118,7 +118,7 @@ export class Home extends React.Component {
             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
-            <h1>Question4: Who created Doctor Double-X?</h1> 
+            <h1>Question 4: Who created Doctor Double-X?</h1> 
                     <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Hugo Strange"/>
                     <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Simon Ecks" />
                     <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Victor Zsasz" />
@@ -136,7 +136,7 @@ export class Home extends React.Component {
            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
-            <h1>Question5: The Cluemaster had one child, what is their name?</h1> 
+            <h1>Question 5: The Cluemaster had one child, what is their name?</h1> 
                     <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Alpha"/>
                     <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) Dr. Moon" />
                     <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Silken Spider" />
