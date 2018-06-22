@@ -12,25 +12,21 @@ export class Home extends React.Component {
 
     toggleAnswerA(event){
         const value = event.currentTarget.value
-        console.log(value)
         this.props.dispatch(actions.toggleAnswerA(value))
     }
 
     toggleAnswerB(event){
         const value = event.currentTarget.value
-        console.log(value)
         this.props.dispatch(actions.toggleAnswerB(value))
     }
 
     toggleAnswerC(event){
         const value = event.currentTarget.value
-        console.log(value)
         this.props.dispatch(actions.toggleAnswerC(value))
     }
 
     toggleAnswerD(event){
         const value = event.currentTarget.value
-        console.log(value)
         this.props.dispatch(actions.toggleAnswerD(value))
     }
     
@@ -104,7 +100,7 @@ export class Home extends React.Component {
            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
             <div className = "terminal1">
             </div>
-            <h1>Question3: Who is the first criminal that you arrested??</h1> 
+            <h1>Question3: Who is the first criminal that Batman arrested?</h1> 
                     <input onClick={event => this.toggleAnswerA(event)} className= {`button-choice ${this.props.selecteda}`} type="button" name="choice" value="a) Slugsy Kyle"/>
                     <input onClick={event => this.toggleAnswerB(event)} className= {`button-choice ${this.props.selectedb}`} type="button" name="choice" value="b) The Red Hood" />
                     <input onClick={event => this.toggleAnswerC(event)} className= {`button-choice ${this.props.selectedc}`} type="button" name="choice" value="c) Penguin" />

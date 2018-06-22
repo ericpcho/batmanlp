@@ -13,7 +13,7 @@
 }
 
 .home-text {
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     font-size: 50px;
     text-align: center;
     display: block;
@@ -25,7 +25,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     height: 150px;
     width: 375px;
     margin-left: auto;
@@ -44,7 +44,7 @@
     background:none!important;
     border:none; 
     padding:0!important;
-    font-family: "Daniel";
+    font-family: "Vollkorn";
     display: block;
     margin: auto;
     font-size: 30px;
@@ -61,7 +61,7 @@
     background:none!important;
     border:none; 
     padding:0!important;
-    font-family: "Daniel";
+    font-family: "Vollkorn";
     display: block;
     margin: auto;
     font-size: 30px;
@@ -71,20 +71,20 @@
  
 
 h1 {
-    font-family: "Daniel";
+    font-family: "Vollkorn";
     font-size: 30px;
     text-align: center;
     padding-top: 10px;
 }
 
 h2 {
-    font-family: "Daniel";
+    font-family: "Vollkorn";
     font-size: 30px;
     text-align: center;
     padding-top: 10px;
 }
 h3 {
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     font-size: 40px;
     text-align: center;
     margin: 0px;
@@ -92,7 +92,7 @@ h3 {
 }
 
 h4 {
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     font-size: 40px;
     text-align: center;
     margin: 0px;
@@ -103,7 +103,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     height: 75px;
     width: 125px;
     margin-left: auto;
@@ -124,7 +124,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     height: 55px;
     width: 200px;
     margin-left: auto;
@@ -134,7 +134,6 @@ h4 {
     margin-top: 50px;
     font-size: 45px;
     margin-top: 7px;
-    padding-top: 7px;
 }
 
 .form-submit:hover { 
@@ -142,11 +141,11 @@ h4 {
  }
 
 .error {
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     display: block;
     margin: auto;
     padding-top: 15px;
-    width: 300px;
+    width: 220px;
 }
 
 .correct, .incorrect {
@@ -154,7 +153,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
-    font-family: "DanielBold";
+    font-family: "Vollkorn";
     height: 50px;
     width: 275px;
     margin-left: auto;
@@ -162,7 +161,7 @@ h4 {
     display: block;
     text-align: center;
     font-size: 30px;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-top: 50px;
 }
 
@@ -187,7 +186,7 @@ h4 {
 }
 
 .email-form {
-    font-family: "Daniel";
+    font-family: "Vollkorn";
     padding-right: 10px;
     display: inline-block;
     margin: auto;
@@ -195,7 +194,6 @@ h4 {
 }
 
 .email-text {
-    width: 335px;
     text-align: center;
     margin: auto;
     font-size: 30px;
@@ -207,7 +205,7 @@ h4 {
     display: inline-block;
     border: none;
     display: inline;
-    font-family: "Danielbold";
+    font-family: "Vollkorn";
     font-size: inherit;
     padding-left: 15px;;
     background: inherit;
@@ -219,7 +217,7 @@ h4 {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
-    width: 450px;
+    width: 390px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -278,7 +276,7 @@ h4 {
         background:none!important;
         border:none; 
         padding:0!important;
-        font-family: "Daniel";
+        font-family: "Vollkorn";
         display: block;
         margin: auto;
         font-size: 20px;
