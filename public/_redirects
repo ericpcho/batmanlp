@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+
+https://batmanlp.netlify.com/* https://dcanatomy.insighteditions.com/:splat 301!
+
+/* /index.html 200
