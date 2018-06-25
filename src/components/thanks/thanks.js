@@ -18,9 +18,9 @@ export class Thanks extends React.Component {
                     <div className="spread4"> </div>
                     <h2 className="social-text">Want to learn more? Follow Insight Editions on social media </h2>
                     <ul className="social-media">
-                        <li className="instagram"></li>
-                        <li className="facebook"></li>
-                        <li className="twitter"></li>
+                        <a href="https://www.instagram.com/insighteditions" className="instagram"></a>
+                        <a href="https://www.facebook.com/InsightEditions" className="facebook"></a>
+                        <a href="https://twitter.com/insighteditions" className="twitter"></a>
                     </ul>
                     <a href="http://insighteditions.com" className="ie-logo"> </a>
             <a href="https://www.dccomics.com" className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></a>
