@@ -191,7 +191,7 @@ export class Home extends React.Component {
                     <label className="email-text">Email Address:</label>
                     <input onChange={event => this.saveEmail(event)} className="email" type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
                     </div>
-                    <input type="hidden" name="_redirect" value="https://batmanlp.netlify.com"/>
+                    <input type="hidden" name="_redirect" value="https://dcanatomy.insighteditions.com/thanks"/>
                     <button onClick={() => this.changeView("question7")} id="form-submit" className="form-submit" type="submit" disabled>Submit</button>
                     </form>
             </section>
