@@ -5,3 +5,125 @@
     padding-top: 360px;
 }
 
+.spread1{
+    background: url("spread2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 410px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spread2{
+    background: url("spread1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spread3{
+    background: url("spread3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spread4{
+    background: url("spread4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+.instagram{
+    background: url("Instagram.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.facebook{
+    background: url("Facebook.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.twitter{
+    background: url("Twitter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    .spread1{
+        background: url("spread2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 259px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .spread2{
+        background: url("spread1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 168px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .spread3{
+        background: url("spread3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 168px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .spread4{
+        background: url("spread4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 168px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
