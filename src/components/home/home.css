@@ -285,6 +285,14 @@ h4 {
         font-size: 15px;
     }
 
+    .name-text {
+        width: 235px;
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+
+    }
+
     .email-div{
         padding-top: 50px;
         padding-bottom: 30px;
@@ -293,6 +301,18 @@ h4 {
     }
 
     .email {
+        padding-top: 15px;
+        width: 150px;
+    }
+
+    .name-div{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        margin: auto;
+        width: 150px;
+    }
+
+    .name {
         padding-top: 15px;
         width: 150px;
     }

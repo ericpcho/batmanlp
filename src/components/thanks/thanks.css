@@ -124,6 +124,31 @@ ul {
         margin-right: auto;
     }
 
-
+    .instagram{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    
+    .facebook{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    
+    .twitter{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 25px;
+        width: 25px;
+        margin: 10px;
+        margin-top: 10px;
+    }
 
 }
