@@ -32,7 +32,7 @@ export class Home extends React.Component {
     
     submitAnswer(event){
         if(this.props.selectedAnswer === ""){
-            this.props.dispatch(actions.error())
+            this.props.dispatch(actions.error("Please Select an Answer Choice"))
         }
         else if(this.props.selectedAnswer === "c) The Sun" || this.props.selectedAnswer === "b) Dr. Robert Kirkland Langstrom" || this.props.selectedAnswer === "a) Slugsy Kyle" || this.props.selectedAnswer === "b) Simon Ecks" || this.props.selectedAnswer === "d) The Spoiler"){
             let pageValue = this.props.page
@@ -43,6 +43,35 @@ export class Home extends React.Component {
             this.props.dispatch(actions.wrongAnswer())
         }
 
+    }
+
+    saveName(event){
+        console.log(event.target.value)
+        let name = event.target.value
+        this.props.dispatch(actions.saveName(name));
+        console.log(this.props.email)
+        if(name === "" || this.props.email === "") {
+            var btn = document.getElementById("form-submit");
+            btn.disabled = true;
+        }
+        if(name != "" && this.props.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+            var btn = document.getElementById("form-submit");
+            btn.disabled = false;
+        }
+    }
+
+    saveEmail(event){
+        console.log(event.target.value)
+        let email = event.target.value
+        this.props.dispatch(actions.saveEmail(email));
+        if(email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) && this.props.name !="") {
+            var btn = document.getElementById("form-submit");
+            btn.disabled = false;
+        }
+        if(!email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i) || this.props.name === "") {
+            var btn = document.getElementById("form-submit");
+            btn.disabled = true;
+        }
     }
 
     render() {
@@ -151,22 +180,31 @@ export class Home extends React.Component {
 
         if (this.props.view === 'question6') {
             pageView = <section className="container">
+            <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
+                   <h2> Almost there! Sign up for the Insight Editions newsletter to reveal the secrets of the Batcave </h2>
+                   <form className="email-form" action="https://submit-form.com/644aded2-3c69-42f9-b5e0-e17504165f9e" method="POST">
+                   <div className="name-div">
+                   <label className='name-text'>Name:</label> 
+                    <input onChange={event => this.saveName(event)} className="name" type="name" name= "name" defaultValue="" placeholder="Enter your name..."/>
+                    </div>
+                    <div className="email-div">
+                    <label className="email-text">Email Address:</label>
+                    <input onChange={event => this.saveEmail(event)} className="email" type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
+                    </div>
+                    <input type="hidden" name="_redirect" value="https://batmanlp.netlify.com"/>
+                    <button onClick={() => this.changeView("question7")} id="form-submit" className="form-submit" type="submit" disabled>Submit</button>
+                    </form>
+            </section>
+        }
+
+        if (this.props.view === 'question7') {
+            pageView = <section className="container">
                     <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
                     <h2>Congratulations! You are one of the very few to access this page.</h2>
                     <h2>As a reward, here are exclusive srpeads from DC Comics: Anatomy of a Metahuman</h2>
                     <h2>Available September 2018</h2>
                     <div className="spread1"> </div>
                     <div className="spread2"> </div>
-                    <h3>Want to learn more?</h3>
-                    <h4>Sign up now to get the latest news</h4>
-                    <form className="email-form" action="https://submit-form.com/644aded2-3c69-42f9-b5e0-e17504165f9e" method="POST">
-                    <div className="email-div"> 
-                    <label className="email-text">Email Address:</label>
-                    <input className="email" type="email" name= "email" defaultValue="" placeholder="Enter your email..."/>
-                    </div>
-                    <input type="hidden" name="_redirect" value="https://batmanlp.netlify.com/thanks"/>
-                    <button className="form-submit" type="submit">Submit</button>
-                    </form>
                     <a href="http://insighteditions.com" className="ie-logo"> </a>
             <a href="https://www.dccomics.com" className="wb-logo"><span className="legal" >All related characters and elements © & ™ DC Comics. (s18)</span></a>
             </section>
@@ -211,7 +249,9 @@ const mapStateToProps = state => ({
     selecteda: state.selecteda,
     selectedb: state.selectedb,
     selectedc: state.selectedc,
-    selectedd: state.selectedd
+    selectedd: state.selectedd,
+    email: state.email,
+    name: state.name
 })
 
 export default connect(mapStateToProps)(Home);

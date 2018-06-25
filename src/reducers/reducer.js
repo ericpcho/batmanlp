@@ -9,6 +9,8 @@ const initialState = {
     selectedb: "",
     selectedc: "",
     selectedd: "",
+    name: "",
+    email: ""
 }
 
 export const reducer = (state = initialState, action) => {
@@ -86,7 +88,19 @@ export const reducer = (state = initialState, action) => {
 
     else if (action.type === actions.ERROR) {
         return Object.assign({}, state, {
-            error: "Please Select an Answer Choice"
+            error: action.error
+        })
+    }
+
+    else if (action.type === actions.SAVE_NAME) {
+        return Object.assign({}, state, {
+            name: action.name
+        })
+    }
+
+    else if (action.type === actions.SAVE_EMAIL) {
+        return Object.assign({}, state, {
+            email: action.email
         })
     }
 

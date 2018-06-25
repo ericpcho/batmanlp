@@ -40,6 +40,19 @@ export const wrongAnswer = () => ({
 })
 
 export const ERROR = 'ERROR';
-export const error = () => ({
-    type: ERROR
+export const error = (error) => ({
+    type: ERROR,
+    error
+})
+
+export const SAVE_NAME = 'SAVE_NAME';
+export const saveName = (name) => ({
+    type: SAVE_NAME,
+    name
+})
+
+export const SAVE_EMAIL = 'SAVE_EMAIL';
+export const saveEmail = (email) => ({
+    type: SAVE_EMAIL,
+    email
 })
