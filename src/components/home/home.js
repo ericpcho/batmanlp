@@ -181,7 +181,7 @@ export class Home extends React.Component {
         if (this.props.view === 'question6') {
             pageView = <section className="container">
             <div className="title-logo"><img className="anatomy" src={anatomy}/></div>
-                   <h2> Almost there! Sign up for the Insight Editions newsletter to reveal exclusive, never-before-seen spreads </h2>
+                   <h2> Almost there! Sign up for the Insight Editions newsletter to reveal exclusive, never-before-seen content </h2>
                    <form className="email-form" action="https://submit-form.com/644aded2-3c69-42f9-b5e0-e17504165f9e" method="POST">
                    <div className="name-div">
                    <label className='name-text'>Name:</label> 
